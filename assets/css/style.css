@@ -1,0 +1,360 @@
+/* Theme colour notes: Colours below are used to compliment the black & white theme. --brightcolor is used to highlight h1 and h2 or accent certain sections for balance/aesthetics */
+
+:root {
+  --darkcolor: #424242;
+  --lightcolor: #feffea;
+  --brightcolor: #fcfc62;
+  --darkgrey: #a3a3a3;
+  --lightgrey: #c9c9c9;
+}
+
+body {
+  background: var(--lightgrey);
+  font-family: "Lato", sans-serif;
+  line-height: 120%;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 15px;
+  padding: 10px;
+}
+
+h4 {
+  font-size: 15px;
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+header h1 {
+  padding: 0px 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Start Navigation Styles */
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+nav li a:hover {
+  background: var(--brightcolor);
+  color: black;
+  transition: 0.75s ease;
+}
+
+.main-menu {
+  list-style-type: none;
+  display: flex;
+  font-size: 15px;
+}
+
+.main-menu li a {
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styles to highlight last name "So" */
+
+.text-highlight {
+  color: var(--brightcolor);
+  transition: all 2s ease-in-out;
+}
+
+/* End Navigation Styles */
+
+/* Start Hero Section */
+
+.intro-title {
+  margin: 10px;
+  line-height: 120%;
+  padding: 5px;
+  border: 3px solid black;
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  font-size: 18px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section .hero-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-row p {
+  padding: 0px 20px;
+  margin-bottom: 8px;
+}
+
+.hero-row p:last-of-type {
+  margin-bottom: 24px;
+}
+
+.intro {
+  line-height: 150%;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+/* End Hero Section */
+
+/* Start Portfolio Section */
+
+.section-header {
+  padding: 10px 0px;
+  background: var(--brightcolor);
+}
+
+.section-h2 {
+  width: 100%;
+  text-align: center;
+  border-style: 4px solid #000;
+}
+
+.project {
+  align-items: center;
+  width: 100%;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.portfolio-text {
+  background: var(--brightcolor);
+  color: black;
+  z-index: 1;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.skills:hover .floating a .portfolio-text {
+  background-color: black;
+  color: var(--brightcolor);
+  transition: 0.75s ease;
+}
+
+.skills:hover img {
+  opacity: 0.5;
+  transition: 0.75s ease;
+}
+
+.creative {
+  align-items: center;
+}
+
+.skills {
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.skills img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.floating {
+  position: absolute;
+  top: 50%;
+}
+
+/* Start Contact Form  */
+
+.form-section form {
+  padding: 20px;
+}
+
+.form-section {
+  max-width: 100%;
+  width: 600px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form-row input,
+textarea {
+  width: 100%;
+  outline: none;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 2px solid var(--darkcolor);
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 0px solid transparent;
+  background-color: transparent;
+}
+
+.form-row input:focus,
+textarea:focus {
+  border-bottom: 4px solid var(--brightcolor);
+}
+
+.form-section button {
+  margin: 0 auto;
+  display: block;
+  border: 0;
+  background-color: var(--brightcolor);
+  color: black;
+  border-radius: 0px;
+}
+.form-section button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.75s ease;
+}
+
+.form-row label {
+  width: 180px;
+  display: none;
+}
+
+.send-button {
+  padding: 5px 40px;
+  background: var(--brightcolor);
+}
+
+/* End Contact Form  */
+
+/* Start Footer */
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social img {
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+/* End Footer */
+
+.hidden-intro {
+  visibility: hidden;
+  width: 50%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/* Desktop: For screens larger than 2400px, website will have a max-width to cater to maximum width of images*/
+
+@media screen and (min-width: 2400px) {
+  body {
+    max-width: 2400px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .profile-image {
+    width: 50%;
+    padding: 40px;
+  }
+  .intro-title {
+    position: relative;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-right: -100px;
+    margin-left: 60px;
+    padding: 20px;
+    line-height: 200%;
+    border: 6px solid black;
+  }
+  .hero-section {
+    display: flex;
+  }
+
+  header {
+    font-size: 20px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  nav li {
+    padding: 20px;
+  }
+}
+
+/* Mobile & iPad*/
+
+/* @media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .hero-row {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    font-size: 50%;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  h2,
+  h3 {
+    font-size: 75%;
+  }
+
+  .main-menu li a {
+    padding: 5px 8px;
+  }
+
+  .creative {
+    flex-direction: column;
+  }
+
+  .skills {
+    width: 100%;
+  }
+} */
