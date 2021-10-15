@@ -15,6 +15,7 @@
 - [Room for Improvement](#room-for-improvement)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
+- [License](#license)
 
 ## General Information
 
@@ -24,6 +25,7 @@
 
 - HTML5
 - CSS3
+- JavaScript
 
 ## Features
 
@@ -65,3 +67,7 @@ To do:
 ## Contact
 
 Created by [@lilyso](https://github.com/lilyso).
+
+# License
+
+- MIT

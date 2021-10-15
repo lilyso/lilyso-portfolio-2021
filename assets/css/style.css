@@ -137,6 +137,7 @@ nav li a:hover {
 }
 
 .section-header {
+  margin-top: 10px;
   padding: 10px 0px;
   background: var(--brightcolor);
 }
@@ -166,14 +167,22 @@ nav li a:hover {
   white-space: nowrap;
 }
 
-.skills:hover .floating a .portfolio-text {
+.repo {
+  text-align: center;
+}
+
+.repo a {
+  color: black;
+}
+
+.skills:hover .floating .portfolio-text {
   background-color: black;
   color: var(--brightcolor);
   transition: 0.75s ease;
 }
 
 .skills:hover img {
-  opacity: 0.5;
+  filter: grayscale();
   transition: 0.75s ease;
 }
 
@@ -186,7 +195,7 @@ nav li a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 40px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .floating {
@@ -197,7 +206,8 @@ nav li a:hover {
 /* Digital Marketing Servies */
 
 .marketing {
-  background-color: white;
+  background-color: black;
+  color: white;
   padding: 20px;
   border-radius: 20px;
   margin: 20px;
@@ -206,9 +216,9 @@ nav li a:hover {
 .marketing h3 {
   font-size: 18px;
   font-weight: bolder;
+  color: var(--brightcolor);
 }
 .marketing p {
-  color: var(--darkgrey);
   padding-left: 10px;
 }
 /* Start Contact Form  */
@@ -222,6 +232,7 @@ nav li a:hover {
   width: 600px;
   padding: 10px 20px;
   margin: 0 auto;
+  background-color: var(--lightergrey);
 }
 
 .form-row {
@@ -292,6 +303,11 @@ footer {
   padding: 20px;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
 /* End Footer */
 
 .hidden-intro {
