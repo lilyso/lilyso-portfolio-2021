@@ -43,21 +43,12 @@
 
 ## Project Status
 
-This project is in its first draft. More pages are required to link to the work tiles. "Work" tiles currently contain a placeholder link to a website the author contributes to.
+This project is in its second draft.
 
 ## Room for Improvement
 
-The website requires separate pages for examples of work & experience as listed in the "Work" section. An addition of a blog page would offer more insight into the author's work history and projects.
-
-To do:
-
-- Page needs to be created to link to "photography" with examples or gallery.
-- Page needs to be created to link to "copywriting" with examples/links.
-- Pages needs to be created to link to content strategy and digital marketing sevices.
-- Social icons need to be linked to business pages.
-- More tiles to be added to show more development work.
-- Blog to be added.
-- Page created to showcase web development skills and experience.
+- More pages are required to show full scope of experience.
+- An addition of a blog page would offer more insight into the author's work history and projects.
 
 ## Acknowledgements
 
