@@ -210,7 +210,7 @@ nav li a:hover {
   color: white;
   padding: 20px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 40px;
 }
 
 .marketing h3 {
@@ -328,15 +328,22 @@ footer a {
   }
   .work-section {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .skills h3 {
     font-size: 20px;
+  }
+  .skills {
+    width: 30%;
   }
 }
 
 @media screen and (min-width: 960px) {
   .work-section {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .profile-image {
@@ -383,9 +390,12 @@ footer a {
   .skills h3 {
     font-size: 16px;
   }
+  .skills {
+    width: 30%;
+  }
 }
 
-/* iPad and Portible Devices */
+/* iPad and Portable Devices */
 
 @media screen and (min-width: 768px) {
   .intro-title {
